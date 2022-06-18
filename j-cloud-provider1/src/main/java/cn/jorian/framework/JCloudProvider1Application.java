@@ -12,6 +12,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 public class JCloudProvider1Application {
 
     public static void main(String[] args) {
+        System.out.println("provider1 starting");
         SpringApplication.run(JCloudProvider1Application.class, args);
     }
 

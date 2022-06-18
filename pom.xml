@@ -17,6 +17,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
+    <lombok.version>1.8.2</lombok.version>
   </properties>
 
   <dependencies>
@@ -56,6 +57,7 @@
     <module>j-cloud-consumer-feign</module>
     <module>j-cloud-consumer-feign-hystrix</module>
     <module>j-cloud-zuul</module>
+    <module>j-cloud-stock</module>
   </modules>
 
 

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  */
 @RestController
-public class HelloController {
+public class HelloHystrixController {
 
 	@Autowired
 	public UserClient feignClient;
