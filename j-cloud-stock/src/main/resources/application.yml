@@ -9,9 +9,9 @@ spring:
     # password: ljd_yz2019
     driver-class-name: org.postgresql.Driver
 
-    url: jdbc:postgresql://localhost:5432/trade
-    username: jiedong
-    password: ljd_yz2018
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: postgres
+    password: 123456
 
 # eureka 配置
 eureka:
