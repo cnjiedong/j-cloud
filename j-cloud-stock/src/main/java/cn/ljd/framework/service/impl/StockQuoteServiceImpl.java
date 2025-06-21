@@ -139,10 +139,10 @@ public class StockQuoteServiceImpl implements StockQuoteService {
 
         if(exists1 != null && exists1 > 0 && exists2 != null && exists2 > 0){
             log.info("记录已同步:{}", symbol);
-            return 0;
+            //return 0;
         }
-        sockQuoteService.deleteByStockCode(stockCode);
-        /*if(quoteDate == null) {
+        //sockQuoteService.deleteByStockCode(stockCode);
+        if(quoteDate == null) {
             sockQuoteService.deleteByStockCode(stockCode);
         }else{
             Integer exists = stockQuoteMapper.selectCount(new LambdaQueryWrapper<StockQuotePo>().eq(StockQuotePo::getCode,stockCode).eq(StockQuotePo::getQuoteDate, quoteDate));
@@ -151,7 +151,7 @@ public class StockQuoteServiceImpl implements StockQuoteService {
                 return 0;
             }
             queryDays = "1";
-        }*/
+        }
 
 
         for(int i =0; i<queryYears; i++){
